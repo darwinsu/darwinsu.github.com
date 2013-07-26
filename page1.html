@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学习笔记</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="">
+
+    <style type="text/css">
+      .container{
+          height: 800px;
+          width: 1000px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h4>ND实习之第一次学习记录</h4>
+    <p>
+        hey，<strong>2013.07.11。</strong>  <br/>
+        我开始了人生第一次实习，在网龙。我觉得这会是有意义的，我要记住它。
+        直至今天，十天的实习上班，有一种莫名的奇妙感，是说不清的好或者不好。
+        在学校的时候老师经常这样教训我们，考上一个在被外界普遍认为还不错的学校，滋生不以为然的盲目自我优越感，以至于对学
+        习这样一个机会显得不珍惜，到真正需要展示一些知识的时候变得捉襟见肘。我们要承认比你优秀的太多太多，而你要谦虚的去
+        学习。
+
+        对于选择前端来实习，好像是一种契机。在读书的时候对于前端这样一个概念并没有一个很完整系统的定义，对于它的理解也只
+        片面的停留在HTML＋ＣＳＳ＋JavaScript上。慢慢了解到，前端有很多很多知识去学习，自己连跨进一条腿的程度还不到。
+        简单整理下在这一周的学习情况。
+        <ul>
+            <li>对于Github的认识</li>
+                <p>应该很丢脸，在此之前我只听过Github是用来版本控制，对于自己还是学软件的来说，只是简单听过，深感惭愧。
+                   自己缺少的就是爱折腾的精神，个人觉得很多很牛X的人，就是很爱折腾一些七七八八的东西。现在对于Github算是
+                    有一个初步的认识了，在Github上托管项目，在Github写自己的个人博客。现在有些弄明白怎么在Github写博客后
+                    ，有些爱不释手，对于现在实习前端来说，可以自己写博客样式，布局，写成自己喜欢的博客风格，是件很棒的事
+                    ，我自己又很爱捣腾页面。简单分享下，怎么简单在Github上搭建自己的博客,自己也是学习网上的一些资源。
+                    Github本身的pages功能使你能够很简单快速的建立一个带有Github本身提供的不同风格的博客，建立完成后你可
+                    以自行修改里面的代码。单个人觉得这样很麻烦，你要先去看懂别人的代码，看别人的代码本身就是件很麻烦的事
+                    ，倒不如自己写来的更快，个人推崇自己敲代码完成。使用Github pages完成的简单搭建具体步骤如下：
+                </p>
+
+                    <ul>
+                        <li>新建一个repository，命名为 username.github.com 在这边username就是darwinsu</li>
+                        <img src="images/截图1.bmp" alt="" />
+                        <li>新建完repository后你会看到以下页面，进入settings页面</li>
+                        <img src="images/截图2.bmp" alt=""/>
+                        <li>进入settings后你会看到以下页面，点击Automatic Page Generator按钮生成一个编辑页面后你就可以在
+                            里面写你自己的东西，之后提交</li>
+                        <img src="images/截图3.bmp" alt=""/>
+                        <li>提交后出现以下页面，这是Github自带主题，你可以选择你喜欢的样式，点击Public后，十分钟左右，浏
+                            览 https://username.github.com 能看到你的博客</li>
+                        <img src="images/截图4.bmp" alt=""/>
+                    </ul>
+                <p>第二种方法也是自己比较喜欢和推荐的方法，在本地写好你的html包括样式的布局等等，利用git工具push到github
+                    上，这方法相对第一种来个具有个人自由性。但是在Github上搭建博客以及在日后对博客的维护，最后的还是要搭
+                    配jekyll，但我也还没用，接下来是要学习使用jekyll，一步一步来。这边见到介绍下怎么利用Git把你的本地项
+                    目push到Github上，然后访问你的博客
+                </p>
+
+                    <ul>
+                      <li>同第一种方法一样新建一个repository，命名为 username.github.com 在这边username就是darwinsu</li>
+                    </ul>
+                      <li>安装Git，打开Git Bash，首先要做的是将本地Git和Github关联起来，步骤如下：
+                         <ul>
+                             <li>输入 $ssh-keygen -t rsa 生成秘钥，之后直接回车，不用填写东西。然后就生成一个目录.ssh ，
+                                 里面有两个文件：id_rsa , id_rsa.pub
+                             </li>
+                             <li>这边假设你已经在GitHub注册一个用户，然后进入account-setting ，把id_rsa.pub的内容复制进
+                                 去就可以了。
+                             </li>
+                             <img src="images/截图5.jpg" alt="" />
+                             <li>接下来你就可以将你本地写好的push到Github上了，首先你要确定Git Bash工作在文件位置下然后
+                                 依次输入如下指令 $ git init
+                                 $ git checkout --orphan gh-pages
+                                 $ git add .
+                                 $ git commit -m "first post"
+                                 $ git remote add origin https://github.com/username/username.github.com.git
+                                 $ git push origin gh-pages
+                             </li>
+                         </ul>
+                      </li>
+        </ul>
+     </p>
+    </div>
+</body>
+</html>
