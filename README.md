@@ -1,4 +1,3 @@
-darwinsu.github.com
+我的博客darwinsu.github.com
 ===================
-
-记录
+试着记录些生活
