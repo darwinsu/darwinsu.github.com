@@ -1,0 +1,34 @@
+.container{
+    width: 900px;
+    display: block;
+    margin: 90px auto 80px auto;
+}
+
+.container p{
+    font-weight: 300;
+    color: #555;
+    line-height: 20px;
+}
+
+.container li{
+    font-weight: 300;
+    color: #555;
+    line-height: 20px;
+}
+
+footer{
+    background: #c2ccd0;
+    height: 150px;
+    width: 100%;
+}
+
+footer p{
+    color: #808080;
+    font-weight: 300;
+    font-size:15px;
+}
+
+.email{
+    position: relative;
+    margin-left: 800px;
+}
